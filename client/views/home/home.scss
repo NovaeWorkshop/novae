@@ -1,0 +1,35 @@
+$logo-width: 340px;
+
+#home-view {
+  height: 100%;
+
+  #galaxy-header {
+    background: url('/assets/images/galaxy.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65%;
+
+    .gradient-layer {
+      background: linear-gradient(rgba(0, 0, 0, 0.0), black);
+      padding-top: 61px;
+      width: 100%;
+      height: 100%;
+
+      #novae-logo {
+        width: $logo-width;
+        display: block;
+        margin: 0 auto;
+      }
+
+      #digital-workshop-title {
+        width: $logo-width;
+        display: block;
+        margin: 0 auto;
+        margin-top: 18px;
+      }
+
+    }
+
+  }
+
+}
