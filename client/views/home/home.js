@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('novae')
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider) {
+    $stateProvider
+      .state('home', {
+        url: '/',
         templateUrl: 'views/home/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'vm'

@@ -1,15 +1,11 @@
 'use strict';
 
 angular.module('novae', [
-  'ngRoute'
+  'ui.router'
 ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
 
-    $routeProvider
-      .otherwise({
-        redirectTo: '/'
-      });
-
+    $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
 
   });
