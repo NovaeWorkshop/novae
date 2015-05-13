@@ -4,34 +4,41 @@ $logo-width: 340px;
   height: 100%;
 
   #galaxy-header {
-    background: url('../../assets/images/galaxy.jpg') center center fixed;
+    background: url('../../assets/images/galaxyBlurred.jpg') center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 83%;
 
-    .gradient-layer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background: linear-gradient(rgba(0, 0, 0, 0.0), black);
-      padding-top: 61px;
-      width: 100%;
+    .galaxy-layer {
+      background: url('../../assets/images/galaxy.jpg') center center fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
       height: 100%;
 
-      #novae-logo {
-        width: $logo-width;
-        display: block;
-        margin: 0 auto;
-      }
+      .gradient-layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      #digital-workshop-title {
-        width: $logo-width;
-        display: block;
-        margin: 0 auto;
-        margin-top: 18px;
-      }
+        background: linear-gradient(rgba(0, 0, 0, 0.0), black);
+        padding-top: 61px;
+        width: 100%;
+        height: 100%;
 
+        #novae-logo {
+          width: $logo-width;
+          display: block;
+          margin: 0 auto;
+        }
+
+        #digital-workshop-title {
+          width: $logo-width;
+          display: block;
+          margin: 0 auto;
+          margin-top: 18px;
+        }
+
+      }
     }
 
   }
