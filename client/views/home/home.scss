@@ -4,12 +4,16 @@ $logo-width: 340px;
   height: 100%;
 
   #galaxy-header {
-    background: url('/assets/images/galaxy.jpg') fixed;
+    background: url('../../assets/images/galaxy.jpg') center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 65%;
+    height: 83%;
 
     .gradient-layer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       background: linear-gradient(rgba(0, 0, 0, 0.0), black);
       padding-top: 61px;
       width: 100%;
