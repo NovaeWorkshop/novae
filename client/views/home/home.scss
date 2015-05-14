@@ -40,33 +40,46 @@ $logo-width: 340px;
 
       }
     }
+  }
 
-    .section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 67%;
+    max-width: 720px;
+    text-align: center;
+    font-size: 27px;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: 100;
+    color: #B3B3B3;
+  }
 
-      margin: 0 auto;
-      height: 76%;
-      max-width: 720px;
-      text-align: center;
-      padding: 31px;
-      margin-bottom: 42px;
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      h1 {
-        font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-        font-weight: 100;
-        font-size: 38px;
-        color: #C2C2C2;
-      }
+    margin: 0 auto;
+    height: 76%;
+    max-width: 720px;
+    text-align: center;
+    padding: 31px;
+    margin-bottom: 42px;
 
-      p {
-        font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-        font-weight: 100;
-        font-size: 17px;
-        line-height: 22px;
-      }
+    h1 {
+      font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+      font-weight: 100;
+      font-size: 38px;
+      color: #C2C2C2;
+    }
 
+    p {
+      font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+      font-weight: 100;
+      font-size: 17px;
+      line-height: 22px;
     }
 
   }
