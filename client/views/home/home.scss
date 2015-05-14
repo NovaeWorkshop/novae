@@ -84,4 +84,25 @@ $logo-width: 340px;
 
   }
 
+  .footer {
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    text-align: center;
+    padding-bottom: 42px;
+    max-width: 450px;
+    margin: 0 auto;
+    border-top: 1px solid #2A2A2A;
+
+    h3 {
+      font-weight: 100;
+      font-size: 20px;
+      margin-bottom: 0;
+      color: #7C7C7C;
+    }
+
+    .email {
+      font-size: 18px;
+      color: #AAAAAA;
+    }
+  }
+
 }
