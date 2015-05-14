@@ -103,6 +103,23 @@ $logo-width: 340px;
     .email {
       font-size: 18px;
       color: #AAAAAA;
+
+      a {
+        transition-duration: 0.3s;
+
+        font-size: 18px;
+        color: #AAAAAA;
+        text-decoration: none;
+
+        &:hover {
+          color: #7770B9;
+        }
+
+        &:active {
+          transform: translate(1px, 1px);
+        }
+      }
+
     }
   }
 
