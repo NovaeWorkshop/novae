@@ -8,8 +8,25 @@ $logo-width: 340px;
     height: 94%;
     overflow: hidden;
 
+    .galaxy-blurred-layer {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+
+      background: url('../../assets/images/galaxyBlurred.jpg') center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
     .galaxy-layer {
       position: absolute;
+      z-index: 2;
       top: 0;
       left: 0;
       right: 0;
@@ -24,6 +41,8 @@ $logo-width: 340px;
     }
 
     .gradient-layer {
+      position: relative;
+      z-index: 3;
       display: flex;
       justify-content: center;
       align-items: center;
