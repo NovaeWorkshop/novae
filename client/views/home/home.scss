@@ -93,28 +93,68 @@ $text-color: #A9A9A9;
     justify-content: center;
     align-items: center;
 
-    margin: 0 auto;
-    height: 92%;
-    max-width: 720px;
+    margin: 0;
+    min-height: 92%;
     text-align: center;
     padding: 31px;
     margin-bottom: 42px;
 
-    h1 {
-      font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-      font-weight: 100;
-      font-size: 38px;
-      color: $title-color;
-    }
+    div {
+      width: 100%;
 
-    p {
-      font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-      font-weight: 100;
-      font-size: 22px;
-      line-height: 25px;
-      color: $text-color;
-    }
+      h1, p {
+        margin: 0 auto;
+        max-width: 720px;
+      }
 
+      h1 {
+        font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+        font-weight: 100;
+        font-size: 38px;
+        color: $title-color;
+      }
+
+      p {
+        font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 25px;
+        color: $text-color;
+      }
+
+      .technologies-squares {
+        display: flex;
+        width: 94%;
+        max-width: 1460px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 18px;
+
+        .technology {
+          width: 45%;
+          justify-content: top;
+
+          @media screen and (max-width: 850px) {
+            width: 100%;
+            margin: 45px;
+          }
+
+          .logo {
+            margin-top: 49px;
+            margin-bottom: 11px;
+            width: 76px;
+            max-height: 84px;
+          }
+
+          p {
+            font-size: 19px;
+            width: 76%;
+          }
+
+        }
+      }
+    }
   }
 
   .footer {
@@ -154,5 +194,4 @@ $text-color: #A9A9A9;
 
     }
   }
-
 }
