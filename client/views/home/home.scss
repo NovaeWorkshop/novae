@@ -1,5 +1,8 @@
 $logo-width: 340px;
 
+$title-color: white;
+$text-color: #A9A9A9;
+
 #home-view {
   height: 100%;
 
@@ -81,7 +84,7 @@ $logo-width: 340px;
     font-size: 27px;
     font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
     font-weight: 100;
-    color: #B3B3B3;
+    color: $text-color;
     padding: 31px;
   }
 
@@ -91,7 +94,7 @@ $logo-width: 340px;
     align-items: center;
 
     margin: 0 auto;
-    height: 65%;
+    height: 92%;
     max-width: 720px;
     text-align: center;
     padding: 31px;
@@ -101,14 +104,15 @@ $logo-width: 340px;
       font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
       font-weight: 100;
       font-size: 38px;
-      color: #C2C2C2;
+      color: $title-color;
     }
 
     p {
       font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
       font-weight: 100;
-      font-size: 19px;
+      font-size: 22px;
       line-height: 25px;
+      color: $text-color;
     }
 
   }
