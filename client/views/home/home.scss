@@ -90,6 +90,7 @@ $text-color: #A9A9A9;
 
   .section {
     position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
