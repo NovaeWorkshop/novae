@@ -1,7 +1,7 @@
 $logo-width: 340px;
 
 $title-color: white;
-$text-color: #A9A9A9;
+$text-color: #B5B5B5;
 
 #home-view {
   height: 100%;
@@ -153,22 +153,35 @@ $text-color: #A9A9A9;
             font-size: 19px;
             width: 76%;
           }
-
         }
       }
     }
-  }
 
-  #thinking-background {
-    position: absolute;
-    z-index: -42;
-    left: 0;
-    right: 0;
-    height: 100%;
+    #thinking-background {
+      position: absolute;
+      z-index: -42;
+      left: 0;
+      right: 0;
+      height: 100%;
+      opacity: 0.0;
 
-    background: url('../../assets/images/galaxy3.jpg') center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+      background: url('../../assets/images/galaxy3.jpg') center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #architecture-background {
+      position: absolute;
+      z-index: -42;
+      left: 0;
+      right: 0;
+      height: 100%;
+      opacity: 0.0;
+
+      background: url('../../assets/images/station.jpg') center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 
   .footer {

@@ -21,9 +21,14 @@ angular.module('novae')
     var thinkingSection = document.getElementById('thinking-section');
     var thinkingBackground = document.getElementById('thinking-background');
 
+    var architectureSection = document.getElementById('architecture-section');
+    var architectureBackground = document.getElementById('architecture-background');
+
     var request = null;
 
     angular.element(window).bind('scroll', function (e) {
+
+      // GALAXY HEADER
       var galaxyHeight = parseInt(window.getComputedStyle(galaxy).getPropertyValue('height'));
 
       var screenHeight = window.innerHeight
@@ -44,6 +49,7 @@ angular.module('novae')
       }
 
 
+      // THINKING GALAXY
       var sectionTop = getPos(thinkingSection).y;
 
       if (document.body.scrollTop + screenHeight >= sectionTop
@@ -58,6 +64,29 @@ angular.module('novae')
           thinkingBackground.style.opacity = g * 9;
 
           thinkingBackground.style.webkitTransform = 'translate3d(0, ' + parseInt((document.body.scrollTop - sectionTop) * -0.11) + 'px, 0)'
+            + ' scale3d(' + (1 + g * 0.9) + ', ' + (1 + g * 0.9) + ', 1.0)';
+
+          request = null;
+        });
+
+      }
+
+
+      // ARCHITECTURE STATION
+      var architectureSectionTop = getPos(architectureSection).y;
+
+      if (document.body.scrollTop + screenHeight >= architectureSectionTop
+        && document.body.scrollTop <= architectureSectionTop + screenHeight) {
+
+        var architectureHeight = parseInt(window.getComputedStyle(architectureSection).getPropertyValue('height'));
+
+        window.requestAnimationFrame(function () {
+
+          var g = gauss(0, 10, (document.body.scrollTop - architectureSectionTop) / 31);
+
+          architectureBackground.style.opacity = g * 8;
+
+          architectureBackground.style.webkitTransform = 'translate3d(0, ' + parseInt((document.body.scrollTop - architectureSectionTop) * -0.11) + 'px, 0)'
             + ' scale3d(' + (1 + g * 0.9) + ', ' + (1 + g * 0.9) + ', 1.0)';
 
           request = null;
