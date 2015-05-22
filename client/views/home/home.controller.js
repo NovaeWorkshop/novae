@@ -52,11 +52,13 @@ angular.module('novae')
         var thinkingHeight = parseInt(window.getComputedStyle(thinkingSection).getPropertyValue('height'));
 
         window.requestAnimationFrame(function () {
-          thinkingBackground.style.webkitTransform = 'translate3d(0, ' + parseInt((document.body.scrollTop - sectionTop) * -0.11) + 'px, 0)';
 
-          var opacity = gauss(0, 10, (document.body.scrollTop - sectionTop) / 31);
+          var g = gauss(0, 10, (document.body.scrollTop - sectionTop) / 31);
 
-          thinkingBackground.style.opacity = opacity * 9;
+          thinkingBackground.style.opacity = g * 9;
+
+          thinkingBackground.style.webkitTransform = 'translate3d(0, ' + parseInt((document.body.scrollTop - sectionTop) * -0.11) + 'px, 0)'
+            + ' scale3d(' + (1 + g * 0.9) + ', ' + (1 + g * 0.9) + ', 1.0)';
 
           request = null;
         });
