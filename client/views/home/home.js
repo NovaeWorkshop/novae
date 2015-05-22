@@ -6,7 +6,6 @@ angular.module('novae')
       .state('home', {
         url: '/',
         templateUrl: 'views/home/home.html',
-        controller: 'HomeCtrl',
-        controllerAs: 'vm'
+        controller: 'HomeCtrl'
       });
   });
