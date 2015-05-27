@@ -155,6 +155,60 @@ $text-color: #B5B5B5;
           }
         }
       }
+
+      .team {
+        display: flex;
+        width: 94%;
+        max-width: 1460px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 18px;
+
+        .team-member {
+          width: 30%;
+          justify-content: top;
+
+          @media screen and (max-width: 850px) {
+            width: 100%;
+            margin: 22px;
+          }
+
+          .member-photo {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;
+            margin-top: 31px;
+            border-radius: 100%;
+            background-repeat: no-repeat;
+
+            &.photo-max {
+              background: url('../../assets/images/photoMax.jpg') center center;
+              background-size: cover;
+            }
+            &.photo-seb {
+              background: url('../../assets/images/photoSeb.jpg') center center;
+              background-size: cover;
+            }
+            &.photo-chris {
+              background: url('../../assets/images/photoChris.jpg') center center;
+              background-size: cover;
+            }
+          }
+
+          h2 {
+            font-family: "Open Sans";
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 0.3em;
+          }
+
+          p {
+            font-size: 18px;
+            width: 76%;
+          }
+        }
+      }
     }
 
     #thinking-background {
