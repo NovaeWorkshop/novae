@@ -196,18 +196,45 @@ $text-color: #B5B5B5;
             }
           }
 
+          .social-links {
+            .social-icon {
+              transition-duration: 0.4s;
+              font-size: 31px;
+              color: #666;
+              margin: 0 6px;
+
+              &.linkedin:hover {
+                color: #0077B5;
+              }
+
+              &.github:hover {
+                color: #4183c4;
+              }
+
+              &.website:hover {
+                color: #C0C0C0;
+              }
+            }
+          }
+
           h2 {
             font-family: "Open Sans";
-            font-size: 22px;
-            font-weight: 400;
+            font-size: 19px;
+            font-weight: 100;
             margin-bottom: 0.3em;
+            color: #888;
           }
 
           p {
             font-size: 18px;
             width: 76%;
           }
+
         }
+      }
+
+      .team-text {
+        margin-top: 42px;
       }
     }
 
