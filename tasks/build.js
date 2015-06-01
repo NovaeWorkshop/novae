@@ -48,8 +48,9 @@ gulp.task('clean:finish', function (done) {
 gulp.task('copy:dist', function () {
   var main = gulp.src(['server/**/*', 'package.json'], { base: './' });
   var assets = gulp.src('client/assets/**/*', { base: './' });
+  var awesomeFonts = gulp.src('client/bower_components/font-awesome/fonts/*', { base: './' });
 
-  return sq({ objectMode: true }, main, assets)
+  return sq({ objectMode: true }, main, assets, awesomeFonts)
     .pipe(gulp.dest('dist/'));
 });
 
