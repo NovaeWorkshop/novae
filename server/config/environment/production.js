@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  ip: process.env.IP || 'localhost'
+  ip: 'localhost'
 };
